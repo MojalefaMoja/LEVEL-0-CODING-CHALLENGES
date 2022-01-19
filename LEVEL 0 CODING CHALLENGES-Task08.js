@@ -1,9 +1,19 @@
 function timeConversion(time) {
+    if (time === 60) {
 
-    hour = Math.round(time / 60)
-    mins = time - (60 * hour)
-    stampHr = ""
-    stampMin = ""
+        hour = 0
+        mins = time
+        stampHr = ""
+        stampMin = ""
+
+    } else {
+        hour = Math.round(time / 60)
+        mins = time - (60 * hour)
+        stampHr = ""
+        stampMin = ""
+    }
+
+
 
 
     if (hour > 1) {
@@ -14,12 +24,13 @@ function timeConversion(time) {
         stampHr = " Hour"
     }
 
-    if (mins > 1) {
+    if (mins >= 1) {
 
         stampMin = " Minutes"
 
-    } else {
+    } else if (mins < 0) {
         stampMin = " Minute"
+        mins = 0
     }
 
 
