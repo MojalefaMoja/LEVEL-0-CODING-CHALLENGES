@@ -1,9 +1,10 @@
 function findVowels(text) {
 
     vowels = [];
+    letter = ""
 
 
-    for (let index = 0; index <= text.length; index++) {
+    for (let index = 0; index < text.length; index++) {
 
         switch (text[index]) {
             case 'A', 'a':
@@ -27,10 +28,23 @@ function findVowels(text) {
 
 
 
+
     }
-    return vowels
+
+    for (let index = 0; index < vowels.length; index++) {
+
+        letter += vowels[index] + " "
+
+
+
+    }
+
+    console.log("Vowels: " + letter);
+    return letter
+
+
 
 
 }
 
-console.log(findVowels("Umuzi"));
+findVowels("Umuzi");
