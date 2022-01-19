@@ -1,26 +1,26 @@
 function findVowels(text) {
 
-    vowels = [];
-    letter = ""
+    const vowels = new Set();
+
 
 
     for (let index = 0; index < text.length; index++) {
 
-        switch (text[index]) {
+        switch (text[index].toLowerCase()) {
             case 'A', 'a':
-                vowels.push(text[index])
+                vowels.add(text[index].toLowerCase())
                 break;
             case 'E', 'e':
-                vowels.push(text[index])
+                vowels.add(text[index].toLowerCase())
                 break;
             case 'I', 'i':
-                vowels.push(text[index])
+                vowels.add(text[index].toLowerCase())
                 break;
             case 'O', 'o':
-                vowels.push(text[index])
+                vowels.add(text[index].toLowerCase())
                 break;
             case 'U', 'u':
-                vowels.push(text[index])
+                vowels.add(text[index].toLowerCase())
                 break;
 
         }
@@ -31,15 +31,16 @@ function findVowels(text) {
 
     }
 
-    for (let index = 0; index < vowels.length; index++) {
+    const myIterator = vowels.values();
+    let letter = '';
 
-        letter += vowels[index] + " "
+    for (const entry of myIterator) {
 
-
+        letter += entry + ' ';
 
     }
 
-    console.log("Vowels: " + letter);
+    console.log('Vowels :' + letter);
     return letter
 
 
@@ -47,4 +48,4 @@ function findVowels(text) {
 
 }
 
-findVowels("Umuzi");
+findVowels('Umuzi');
