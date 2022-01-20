@@ -36,7 +36,7 @@ function findVowels(text) {
 
     for (const entry of myIterator) {
 
-        letter += entry + ' ';
+        letter += entry + ' ,';
 
     }
 
