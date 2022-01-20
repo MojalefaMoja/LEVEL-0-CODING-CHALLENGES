@@ -17,7 +17,8 @@ function textCompare(text1, text2) {
     let text = "";
     for (const entry of myIterator) {
 
-        text += entry + " ";
+        text += entry
+        text += ","
 
     }
 
