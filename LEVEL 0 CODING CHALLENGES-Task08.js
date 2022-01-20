@@ -1,5 +1,5 @@
 function timeConversion(time) {
-    if (time === 60) {
+    if (time === 60 || time < 60) {
 
         hour = 0
         mins = time
@@ -24,13 +24,13 @@ function timeConversion(time) {
         stampHr = " Hour"
     }
 
-    if (mins >= 1) {
+    if (mins > 1) {
 
         stampMin = " Minutes"
 
-    } else if (mins < 0) {
+    } else if (mins <= 1) {
         stampMin = " Minute"
-        mins = 0
+
     }
 
 
@@ -38,4 +38,4 @@ function timeConversion(time) {
 
 }
 
-console.log(timeConversion(133));
+console.log(timeConversion(11));
