@@ -1,11 +1,11 @@
- x = 0
- y = 1
+    x = 0
+    y = 1
 
- console.log(x)
- console.log(y)
+    console.log(x);
+    console.log(y);
 
- x = x + 3
- y = y + 3
+    x = x + 3
+    y = y + 3
 
- console.log(x)
- console.log(y)
+    console.log(x);
+    console.log(y);
