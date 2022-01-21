@@ -1,9 +1,11 @@
-    function hello(name) {
+    function evenOrOdd(num) {
 
-        name += "!"
-
-        console.log("Hello", "", name);
+        if (num % 2 === 0) {
+            console.log("Even");
+        } else {
+            console.log("Odd");
+        }
 
     }
 
-    hello("Lisa")
+    evenOrOdd(4)
