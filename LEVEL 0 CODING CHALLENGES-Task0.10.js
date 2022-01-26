@@ -6,7 +6,7 @@
 
             for (let index = 0; index < text1.length; index++) {
 
-                if (text2[i] === text1[index]) {
+                if (text2.includes(text1[index])) {
                     element.add(text1[index])
                 }
 
@@ -18,11 +18,23 @@
         for (const entry of myIterator) {
 
             text += entry
-            text += ","
 
         }
 
-        return console.log("Common Letters:", text);
+        lines = ""
+
+        for (let x = 0; x < text.length; x++) {
+            if (x == text.length - 1) {
+                lines += text[x]
+            } else {
+                lines += text[x] + ","
+            }
+
+        }
+
+
+
+        return console.log("Common Letters:", lines);
 
     }
 
