@@ -9,18 +9,23 @@
             switch (text[index].toLowerCase()) {
                 case "A", "a":
                     vowels.add(text[index].toLowerCase())
+                    vowels.add(",")
                     break;
                 case "E", "e":
                     vowels.add(text[index].toLowerCase())
+                    vowels.add(",")
                     break;
                 case "I", "i":
                     vowels.add(text[index].toLowerCase())
+                    vowels.add(",")
                     break;
                 case "O", "o":
                     vowels.add(text[index].toLowerCase())
+                    vowels.add(",")
                     break;
                 case "U", "u":
                     vowels.add(text[index].toLowerCase())
+                    vowels.add(",")
                     break;
 
             }
@@ -36,7 +41,7 @@
 
         for (const entry of myIterator) {
 
-            letter += entry + " ,"
+            letter += entry
 
         }
 
