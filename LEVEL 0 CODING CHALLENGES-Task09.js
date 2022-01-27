@@ -2,37 +2,26 @@
 
         const vowels = new Set()
 
-
-
         for (let index = 0; index < text.length; index++) {
 
             switch (text[index].toLowerCase()) {
                 case "A", "a":
                     vowels.add(text[index].toLowerCase())
-                    vowels.add(",")
                     break;
                 case "E", "e":
                     vowels.add(text[index].toLowerCase())
-                    vowels.add(",")
                     break;
                 case "I", "i":
                     vowels.add(text[index].toLowerCase())
-                    vowels.add(",")
                     break;
                 case "O", "o":
                     vowels.add(text[index].toLowerCase())
-                    vowels.add(",")
                     break;
                 case "U", "u":
                     vowels.add(text[index].toLowerCase())
-                    vowels.add(",")
                     break;
 
             }
-
-
-
-
 
         }
 
@@ -44,13 +33,19 @@
             letter += entry
 
         }
+        lines = ""
+        for (let x = 0; x < letter.length; x++) {
+            if (x < letter.length - 1) {
+                lines += letter[x] + ","
+            } else {
+                lines += letter[x]
+            }
 
-        console.log("Vowels :" + letter);
-        return letter
+        }
 
 
-
+        console.log("Vowels :" + lines);
 
     }
 
-    findVowels("Umuzi")
+    findVowels("Umuziacademy")
