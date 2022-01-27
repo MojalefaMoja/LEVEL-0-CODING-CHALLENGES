@@ -34,7 +34,7 @@
 
 
 
-        return console.log("Common Letters:", lines);
+        console.log("Common Letters:", lines);
 
     }
 
